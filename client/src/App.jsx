@@ -4,9 +4,11 @@ import About from "./components/About";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import Profile from "./components/Profile";
+import Header from "./components/Header";
 export default function App() {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
